@@ -39,7 +39,7 @@ function viewCart() {
   }else {
     for (var i = 0; i < cart.length; i++) {
       var string = []
-      string = `${getCart()[i].itemName}at ${getCart()[i].itemPrice}, and`
+      string.push(`${getCart()[i].itemName}at ${getCart()[i].itemPrice}, and`)
     }
 
     return `In your cart you have ${string.join(' ')}.`
