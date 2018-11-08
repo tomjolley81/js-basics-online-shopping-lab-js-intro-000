@@ -47,7 +47,7 @@ function viewCart() {
     }
 
     var strings = []
-    strings.push(`${string.join(' ') string2.join('$ ')}.`)
+    strings.push(`${string.join(' ')} at ${string2.join('$ ')}.`)
     return strings
   }
 }
