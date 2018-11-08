@@ -46,7 +46,7 @@ function viewCart() {
       var string = []
       string.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }*/
-    return `In your cart, you have ${string.join(', ')}, and ${getCart()[-1].itemName} at $${getCart()[-1].itemPrice}.`
+    return `In your cart, you have ${string.join(', ')}, and ${getCart()[cart.length].itemName} at $${getCart()[cart.length].itemPrice}.`
   }
 
 
