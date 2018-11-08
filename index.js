@@ -41,7 +41,7 @@ function viewCart() {
 
     for (var i = 0; i < cart.length; i++) {
       var string = []
-      string.push(`${cart.map(({itemName})=> itemName)}))`
+      string.push(`${cart.map(({itemName})=> itemName)}.`)
     }
 
     strings.push(`${string.join(', and ')}.`)
