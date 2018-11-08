@@ -47,7 +47,7 @@ function viewCart() {
     }
 
     var strings = []
-    
+
     return `In your cart you have, ${(string[i])} at ${(string2[i])}.`
   }
 }
