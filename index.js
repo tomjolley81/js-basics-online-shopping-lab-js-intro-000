@@ -47,7 +47,7 @@ function viewCart() {
     }
 
     var strings = []
-    strings.push(`${string[i]} at ${string2[i]}.`)
+    strings.push(`${(string[i])} at ${(string2[i])}.`)
     return strings
   }
 }
