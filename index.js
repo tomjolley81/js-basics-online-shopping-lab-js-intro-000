@@ -43,7 +43,7 @@ function viewCart() {
       var string = []
       string.push(`${cart.map(({itemName})=> itemName)}.`)
       var string2 = []
-      string2.push( `at ${cart.map(({itemPrice})=> itemPrice)}`)
+      string2.push( `${cart.map(({itemPrice})=> itemPrice)}`)
     }
 
     var strings = []
