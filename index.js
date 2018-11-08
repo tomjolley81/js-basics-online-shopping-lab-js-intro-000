@@ -65,6 +65,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   var index = cart.indexOf(item)
+  var ite = ''
   var itemList = []
   itemList = cart.map(({itemName}) => itemName)
   for (ite of itemList) {
@@ -74,7 +75,7 @@ function removeFromCart(item) {
     }else {
       return 'That item is not in your cart'
     }
-    
+
   }
 }
 
