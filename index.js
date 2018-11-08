@@ -67,7 +67,6 @@ function removeFromCart(item) {
   var itemList = []
   itemList = cart.map(({itemName}) => itemName)
   return itemList
-  }
 }
 
 function placeOrder(cardNumber) {
