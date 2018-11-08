@@ -11,10 +11,14 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- return Object.assign(cart, { itemName: item })
-
-
+ var itemToAdd = {}
+ itemToAdd = {
+   itemName : item
+ }
+ cart.push(itemToAdd)
+ return cart
 }
+ 
 
 function viewCart() {
   // write your code here
