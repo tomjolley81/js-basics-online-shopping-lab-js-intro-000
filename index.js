@@ -37,7 +37,7 @@ function viewCart() {
   }else if (cart.length > 1 && cart.length < 3) {
     while (i < cart.length) {
       var strings = []
-      strings = [...strings, `${getCart()[i].itemName} at $${getCart()[i].itemPrice}`)]
+      strings = [...strings, `${getCart()[i].itemName} at $${getCart()[i].itemPrice}`]
       incrementVariable()
     }
     console.log(strings)
