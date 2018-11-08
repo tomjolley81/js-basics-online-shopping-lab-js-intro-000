@@ -29,10 +29,7 @@ function viewCart() {
   function incrementVariable() {
     i = i + 1
   }
-  var itemNames = []
-  var itemPrices = []
-  itemNames.push(cart.map(({itemName})=> itemName))
-  itemPrices.push(cart.map(({itemPrice})=> itemPrice))
+  
   if(!cart.length) {
     return "Your shopping cart is empty."
   }
@@ -43,6 +40,10 @@ function viewCart() {
   }else {
     for (var i = 0; i < cart.length; i++) {
       var string = []
+      var itemNames = []
+      var itemPrices = []
+      itemNames.push(cart.map(({itemName})=> itemName))
+      itemPrices.push(cart.map(({itemPrice})=> itemPrice))
       string.push(`${itemNames[i]} at ${itemPrices[i]}`)
     }
 
