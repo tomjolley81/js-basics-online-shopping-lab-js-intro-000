@@ -25,6 +25,10 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var i = 0
+  function incrementVariable() {
+    i = i + 1
+  }
   var itemNames = []
   var itemPrices = []
   itemNames.push(cart.map(({itemName})=> itemName))
