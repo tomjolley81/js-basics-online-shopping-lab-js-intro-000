@@ -40,7 +40,7 @@ function viewCart() {
     }
     for (i of cart) {
       var string = []
-      string.push('${i.itemName} at ${i.itemPrice}')
+      string.push(`${i.itemName} at ${i.itemPrice}`)
     }
     /*for (var i = 0; i < cart.length; i++) {
       var string = []
