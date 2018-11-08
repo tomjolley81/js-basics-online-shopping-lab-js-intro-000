@@ -29,7 +29,7 @@ function viewCart() {
   function incrementVariable() {
     i = i + 1
   }
-  
+
   if(!cart.length) {
     return "Your shopping cart is empty."
   }
