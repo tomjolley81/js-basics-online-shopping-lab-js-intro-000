@@ -41,13 +41,13 @@ function viewCart() {
 
     for (var i = 0; i < cart.length; i++) {
       var string = []
-      string.push(`${cart.map(({itemName})=> itemName)}.`)
+      string.push(`${cart.map(({itemName})=> itemName)}`)
       var string2 = []
       string2.push( `${cart.map(({itemPrice})=> itemPrice)}`)
     }
 
     var strings = []
-    strings.push(`${string.join(' ')} at ${string2.join('$ ')}.`)
+    strings.push(`${string[i]} at ${string2[i]}.`)
     return strings
   }
 }
