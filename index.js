@@ -39,9 +39,8 @@ function viewCart() {
       return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
     }
     const string = []
-    for (i of cart) {
-
-      string.push(`${i.itemName} at $${i.itemPrice}`)
+    for (var i = 0; i < cart.length; i++) {
+      string.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
     /*for (var i = 0; i < cart.length; i++) {
       var string = []
