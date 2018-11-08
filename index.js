@@ -40,7 +40,7 @@ function viewCart() {
     }
     for (var i = 0; i < cart.length; i++) {
       var string = []
-      string.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+      string = [...string, `${cart[i].itemName} at $${cart[i].itemPrice}`]
     }
     return `In your cart, you have ${string.join(', and ')}.`
   }
