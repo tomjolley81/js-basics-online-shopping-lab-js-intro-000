@@ -34,7 +34,7 @@ function viewCart() {
   }else if (cart.length === 2) {
     for (var i = 0; i < cart.length; i++) {
       var strings = []
-      strings.push(`${getCart()[i].itemName} at ${getCart()[i].itemPrice}`)
+      strings.push(`${getCart()[i-1].itemName} at $${getCart()[i-1].itemPrice}`)
     }
     return `In your cart, you have ${strings[0]}, and ${strings[1]}`
   }
