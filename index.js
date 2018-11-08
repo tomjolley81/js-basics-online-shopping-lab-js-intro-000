@@ -25,7 +25,7 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var i = 0
+  var i
   function incrementVariable() {
     i = i + 1
   }
