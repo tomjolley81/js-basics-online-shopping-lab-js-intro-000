@@ -56,7 +56,7 @@ function total() {
   // write your code here
   const string = []
   for (var i = 0; i < cart.length; i++) {
-    string.push(cart.map(cart[i].itemPrice)
+    string.push(cart.map(cart[i].itemPrice))
   }
   var total = string.reduce((a,b) => a + b)
   return string
