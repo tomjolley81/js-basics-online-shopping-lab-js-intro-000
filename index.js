@@ -64,9 +64,18 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var index = cart.indexOf(item)
   var itemList = []
   itemList = cart.map(({itemName}) => itemName)
-  return itemList
+  for (ite of itemList) {
+    if (ite === item){
+      cart.splice(index)
+      return cart
+    }else {
+      return 'That item is not in your cart'
+    }
+    
+  }
 }
 
 function placeOrder(cardNumber) {
