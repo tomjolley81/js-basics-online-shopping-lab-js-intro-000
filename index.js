@@ -39,10 +39,10 @@ function viewCart() {
       return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
     }
     for (var i = 0; i < cart.length; i++) {
-      return cart
+      return `${cart[i][itemName] at cart[i][itemPrice]}`
     }
   }
-  
+
 
 }
 
