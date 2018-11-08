@@ -59,7 +59,7 @@ function total() {
     string.push(cart.map(cart[i].itemPrice))
   }
   var total = string.reduce((a,b) => a + b)
-  return string
+  return total
 }
 
 function removeFromCart(item) {
