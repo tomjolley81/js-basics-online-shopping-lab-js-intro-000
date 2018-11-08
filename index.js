@@ -43,8 +43,9 @@ function viewCart() {
       var string = []
       string.push(`${cart.map(({itemName})=> itemName)}.`)
     }
-    
-    var strings.push(`${string.join(', and ')}.`)
+
+    var strings = []
+    strings.push(`${string.join(', and ')}.`)
   }
 }
 
