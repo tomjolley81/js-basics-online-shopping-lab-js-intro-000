@@ -54,6 +54,12 @@ function viewCart() {
 
 function total() {
   // write your code here
+  const string = []
+  for (var i = 0; i < cart.length; i++) {
+    string.push(cart.map(({itemPrice})=>itemPrice))
+  }
+  var total = string.reduce((a,b) => a + b)
+  return total
 }
 
 function removeFromCart(item) {
