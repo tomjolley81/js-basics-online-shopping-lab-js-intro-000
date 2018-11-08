@@ -19,7 +19,7 @@ function addToCart(item) {
  }
  getPrice()
  itemToAdd = {
-   itemName : item
+   itemName : item,
    itemPrice: price
  }
  cart.push(itemToAdd)
