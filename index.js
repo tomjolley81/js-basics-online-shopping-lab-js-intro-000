@@ -38,13 +38,13 @@ function viewCart() {
   }else if (cart.length > 1 && cart.length < 3) {
     return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
   }else {
-    
+
     for (var i = 0; i < cart.length; i++) {
       var string = []
-      string.push(`${cart.map(({itemName})=> itemName)} at ${cart.map(({itemPrice})=> itemPrice)}`)
+      string.push(`${cart.map(({itemName})=> itemName)}))`
     }
 
-    return `In your cart you have ${string.join(', and ')}.`
+    strings.push(`${string.join(', and ')}.`)
   }
 }
 
