@@ -35,7 +35,7 @@ function viewCart() {
   if(cart.length === 1) {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }else if (cart.length === 2) {
-    while (i < cart.lenght) {
+    while (i < cart.length) {
       var strings = []
       strings.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`)
       incrementVariable()
