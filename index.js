@@ -18,7 +18,7 @@ function addToCart(item) {
  cart.push(itemToAdd)
  return cart
 }
- 
+
 
 function viewCart() {
   // write your code here
