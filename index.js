@@ -64,11 +64,12 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var cartItem = cart.indexOf(item)
   for (var i = 0; i < cart.length; i++) {
     if (item != cart[i].itemName) {
       return "That item is not in your cart."
     }else {
-    cart.splice(cart.indexOf(item))
+    cart.splice(cartItem)
     }
   }
   return cart
