@@ -70,6 +70,7 @@ function removeFromCart(item) {
   itemList = cart.map(({itemName}) => itemName)
   for (ite of itemList) {
     if (ite === item){
+      var index = cart.indexOf(item)
       cart.splice(index)
       return cart
     }else {
