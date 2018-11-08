@@ -11,8 +11,9 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var meals = {}
- Object.assign({itemName: [item]})
+ return Object.assign(cart, { itemName: item })
+ 
+ 
 }
 
 function viewCart() {
