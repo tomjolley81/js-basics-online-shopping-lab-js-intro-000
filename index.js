@@ -39,14 +39,14 @@ function viewCart() {
       return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
     }
     const string = []
-    for (var i = 0; i < cart.length - 1; i++) {
+    for (var i = 0; i < cart.length; i++) {
       string.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
     /*for (var i = 0; i < cart.length; i++) {
       var string = []
       string.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }*/
-    return `In your cart, you have ${string.join(', ')}, and ${getCart()[cart.length].itemName} at $${getCart()[cart.length].itemPrice}.`
+    return `In your cart, you have ${string.join(', ')}.`
   }
 
 
