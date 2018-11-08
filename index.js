@@ -19,7 +19,7 @@ function addToCart(item) {
    itemPrice: price
  }
  cart.push(itemToAdd)
- return cart
+ return `${item} has been added to your cart.`
 }
 
 
